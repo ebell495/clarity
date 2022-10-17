@@ -1,0 +1,6 @@
+project: clarity
+target: ClarityFuzz
+
+cmds:
+    - cmd: /jazzer --cp=/project/fuzz/src/ClarityFuzz.jar:/project/fuzz/src/libs.jar --target_class=ClarityFuzz
+      libfuzzer: true
